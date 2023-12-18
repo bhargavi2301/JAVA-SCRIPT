@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> case in js</title>
+    <style>
+        .box1 button{
+             justify-content: space-evenly;
+        
+            margin:10px;
+            background-color: rgb(212, 252, 239);
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        .contain{
+            margin: 120px 120px;
+            border: 2px;
+            background-color: rgb(174, 227, 249);
+            width: 50%;
+            padding: 90px;
+            border-radius: 2px solid black;
+        }
+        .box2 button{
+        justify-content: space-evenly;
+        margin:10px;
+        background-color: rgb(212, 252, 239);
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+     .box input{
+      background-color:transparent gray;
+      border-radius: 7px;
+      width: 63%;
+      height: 40%;
+     }
+    </style>
+
+</head>
+<body>
+    <div class="contain">
+        <div class="box">
+            <input type="text" class="test" id="mobile" >
+        </div>
+        <div class="box1">
+            <button onclick="clickme('uppercase')">uppercase</button>
+            <button onclick="clickme('lowercase')">lowercase</button>
+            <button onclick="clickme ('trim')">trim</button>
+            <button onclick="clickme('replace')">replace</button>
+        </div>
+        <div class="box2">
+            <button onclick="clickme('length')">length</button>
+            <button onclick="clickme('clear')">clear</button>
+            <button onclick="clickme('wordcount')">wordcount</button>
+            <button onclick="clickme('charcount')">charcount</button>
+        </div>
+    </div>
+
+    <script>
+        function clickme(){
+            switch ('program'){
+                case 'uppercase':
+                    result=inputText.toUpperCase();
+                break;
+
+                case 'lowercase':
+                    result=inputText.toLowerCase();
+                    break;
+
+                case 'trim':
+                    result= inputText.trim();
+                    break;
+                    
+                case 'replace':
+                    result= inputText.replace();
+                    break;
+                
+                case 'length':
+                    result= inputText.length();
+                    break;
+
+                case 'clear':
+                    result=inputText.clear();
+                    break;
+
+                case 'wordcount':
+                    result=inputText.wordcount();
+                    break;
+
+                case 'charcount':
+                    result=inputText.charcount();
+                    break;           
+        }                  
+     }
+    </script>
+</body>
+</html>
