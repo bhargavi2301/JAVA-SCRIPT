@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kilometer convert meter</title>
+</head>
+<body>
+    <h2> kelometer convert meter</h2>
+    <input type="number"id="km"class="meter" value=""> 
+    <button onclick="changeme()">clickme</button>
+    <h3 id="box"></h3>
+
+    <script>
+        function changeme(){
+            var a = document.getElementById('km').value;
+            var b = 1000;
+            // 1 km = 1000 mtr
+            var meter = a * b;
+            alert(meter);
+            // document.getElementById('box').innerHTML =
+        }
+    </script>
+</body>
+</html>

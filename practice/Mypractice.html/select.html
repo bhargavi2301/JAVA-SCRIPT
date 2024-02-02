@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select quantities</title>
+</head>
+
+<body>
+
+    <!-- price <input type="text" value="20" id="price">
+    <select  onchange="multiple()" name="" id="quantities">
+         <option value="">select</option> -->
+        <!-- <option value="">5</option> -->
+    <!-- </select> -->
+    <!-- <p id="para"></p>  -->
+     <input type="text" id="price" value=""><br><br>
+     <select onchange="changeCurr()" id="bb" > 
+        <option hidden>select currancy</option>
+        <option value="83.11" id="check">$</option>
+        <option value="1" id="check1">₹</option>
+        <option value="34" class="check">€</option>
+         <!-- euro -->
+         <option value="4" class="check">₣</option> 
+         <!-- french  -->
+          <option value="0.018" class="check">₳</option> 
+        <!-- aust -->
+
+
+    </select>
+    <input type="text" id="convert" value="">
+
+    
+
+    <!-- <button onclick="changeCurr()">Dollor</button> -->
+    <!-- <p id="contant"></p> -->
+
+    <script>
+        function changeCurr() {
+            let a = document.getElementById("bb").value;
+            let b = document.getElementById("price").value;
+            console.log(b)
+            let c = a * b;
+            console.log(c);          
+            document.getElementById("convert").value=c;
+       
+        }
+    </script>
+</body>
+
+</html>
